@@ -16,8 +16,7 @@ public class PlayerControl : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>(); // For 3D, if you're using 2D, change to Rigidbody2D
         sr = gameObject.GetComponent<SpriteRenderer>(); // Ensure sr is assigned
-        // Freeze rotation to avoid flipping issues
-        rb.freezeRotation = true;
+        rb.freezeRotation = true; // Freeze rotation to avoid flipping issues
     }
 
     // Update is called once per frame
@@ -55,5 +54,7 @@ public class PlayerControl : MonoBehaviour
         {
             sr.flipX = false; // Flip sprite to the right
         }
-    }
+
+        // Check for mouse click to fire the weapo
+}
 }
